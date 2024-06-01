@@ -186,6 +186,7 @@ section {
 
 .swiper-slide .overlay .btn a {
     font-size: 1.2rem;
+    color: var(--primary-color);
 }
 
 .swiper-slide:hover .overlay {
