@@ -87,3 +87,108 @@ section {
     height: 100%;
     object-fit: cover;
 }
+
+#serviceSection {
+    height: 100vh;
+    margin-top: 5rem;
+}
+
+#serviceSection .serviceHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#serviceSection .leftSection h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-family: var(--primary-font-family);
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+#serviceSection .leftSection h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: var(--primary-font-family);
+    line-height: 2.8rem;
+    letter-spacing: -1px;
+    margin-block: 2rem;
+}
+
+#serviceSection .rightSection {
+    width: 60%;
+}
+
+#serviceSection .rightSection p {
+    font-size: 1.5rem;
+}
+
+.swiper {
+    width: 100%;
+    height: 80%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper .swiper-wrapper {
+    height: 90%;
+}
+
+.swiper-slide .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    pointer-events: none;
+}
+
+.swiper-slide .overlay img {
+    height: 15%;
+    width: 25%;
+    object-fit: contain;
+}
+
+.swiper-slide .overlay .btn {
+    background-color: #fff;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 4rem;
+}
+
+.swiper-slide .overlay .btn a {
+    font-size: 1.2rem;
+}
+
+.swiper-slide:hover .overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
