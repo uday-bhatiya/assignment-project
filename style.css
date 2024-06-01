@@ -23,6 +23,28 @@ section {
     padding: 4rem 7%;
 }
 
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-block: 1rem;
+    gap: 2rem;
+}
+
+.heading h2 {
+    color: var(--primary-color);
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.heading h3 {
+    color: #000;
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 #heroSection {
     height: 100vh;
     width: 100vw;   
@@ -192,4 +214,45 @@ section {
 .swiper-slide:hover .overlay {
     opacity: 1;
     pointer-events: auto;
+}
+
+#featuredSection{
+    height: 100vh;
+    width: 100%;
+}
+
+#featuredSection .cardContainer {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#featuredSection .cardContainer .card {
+    width: 25rem;
+    height: 22rem;
+}
+
+#featuredSection .cardContainer .card .img {
+    width: 100%;
+    height: 40%;
+    margin-block: .5rem;
+}
+
+#featuredSection .cardContainer .card span {
+    font-size: 2rem;
+    font-family: var(--secondary-font-family);
+    font-weight: 500;
+    margin-block: 1rem;
+}
+
+#featuredSection .cardContainer .card p {
+    font-size: 1.6rem;
+    font-family: var(--secondary-font-family);
+    font-weight: 300;
+    line-height: 1.7rem;
+    margin-top: 1rem;
 }
