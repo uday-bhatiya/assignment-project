@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #FF3147;
+    --primary-font-family: "Cormorant SC", serif;
+    --secondary-font-family : "Poppins", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 4rem 7%;
+}
+
+#heroSection {
+    height: 100vh;
+    width: 100vw;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#heroSection .leftSection  {
+    display: flex;
+    flex-direction: column;
+    /* background: red; */
+    width: 45%;
+}
+
+#heroSection .leftSection h3{
+    font-size: 4rem;
+    color: var(--primary-color);
+    font-family: var(--primary-font-family);
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    font-weight: 600;
+}
+
+#heroSection .leftSection h2 {
+    font-family: var(--primary-font-family);
+    font-size: 7rem;
+    font-weight: bold;
+    line-height: 5rem;
+    margin-block: 2.5rem;
+    font: normal normal bold;
+}
+
+#heroSection .leftSection p {
+    font-size: 1.5rem;
+    font-family: var(--secondary-font-family);
+    margin-block: 2.5rem;
+    font: normal normal normal;
+}
+
+#heroSection .leftSection button {
+    padding: 1rem 1.5rem;
+    width: fit-content;
+    background-color: var(--primary-color);
+    color: #FFF;
+    border: none;
+    outline: none;
+}
+
+#heroSection .rightSection {
+    width: 45%;
+}
+
+#heroSection .rightSection .imgContainer{
+    width: 100%;
+    height: 100%;
+}
+
+#heroSection .rightSection .imgContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
