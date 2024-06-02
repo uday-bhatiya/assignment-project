@@ -319,3 +319,49 @@ section {
     font-weight: 400;
     margin-block: 1rem;
 }
+
+#companySection {
+    width: 100%;
+    height: 100vh;
+}
+
+#companySection .cardContainer {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+#companySection .cardContainer .card {
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+
+#companySection .cardContainer .card img {
+    width: 20%;
+}
+
+#companySection .cardContainer .card h3 {
+    margin-block: .2rem ;
+    font-size: 5.5rem;
+    font-family: var(--secondary-font-family);
+    font-weight: 200;
+}
+
+#companySection .cardContainer .card span {
+    font-size: 1.5rem;
+    font-family: var(--secondary-font-family);
+    font-weight: 200;
+}
+
+#companySection .cardContainer .card:hover {
+    -webkit-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.75);
+}
