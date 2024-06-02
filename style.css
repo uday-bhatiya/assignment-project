@@ -36,6 +36,7 @@ section {
     color: var(--primary-color);
     font-size: 2.4rem;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .heading h3 {
@@ -261,4 +262,60 @@ section {
     font-weight: 300;
     line-height: 1.7rem;
     margin-top: 1rem;
+}
+
+#projectSection {
+    width: 100%;
+    height: 100vh;
+}
+
+#projectSection .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+#projectSection .img {
+    width: 50%;
+    height: 70%;
+}
+
+#projectSection .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#projectSection .projectContainer {
+    width: 35%;
+}
+
+#projectSection .projectContainer .project {
+    padding: 2.5rem 2rem;
+    transition: 0.2s ease-in-out;
+}
+
+#projectSection .projectContainer .project:hover {
+    background-color: var(--primary-color);
+}
+
+#projectSection .projectContainer .project:hover h3,
+#projectSection .projectContainer .project:hover p{
+    color: #FFF;
+}
+
+#projectSection .projectContainer .project h3 {
+    font-size: 2rem;
+    font-family: var(--secondary-font-family);
+    font-weight: 500;
+}
+
+#projectSection .projectContainer .project p {
+    font-size: 1.6rem;
+    font-family: var(--secondary-font-family);
+    font-weight: 400;
+    margin-block: 1rem;
 }
