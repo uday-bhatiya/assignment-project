@@ -1,3 +1,15 @@
+const projectSectionImageChange = () => {
+    let elems = document.querySelectorAll('#projectContainer .project')
+const image = document.querySelector('#projectSection .container .img img')
+
+elems.forEach(function(e){
+    e.addEventListener('mouseenter', function(){
+        let img = e.getAttribute('data-img')
+        image.src = img
+    })
+})
+}
+
 const swipperJs = () => {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
@@ -40,5 +52,6 @@ const popUpForm = () => {
     });
 }
 
+projectSectionImageChange()
 swipperJs()
 popUpForm()
