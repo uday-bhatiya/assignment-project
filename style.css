@@ -365,3 +365,45 @@ section {
 -moz-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.75);
 box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.75);
 }
+
+#feedbackSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+#feedbackSection .container {
+    width: 60%;
+    margin-bottom: 5rem;
+}
+
+#feedbackSection .container p, h3 {
+    font-size: 1.8rem;
+    font-family: var(--secondary-font-family);
+    font-weight: 400;
+}
+
+#feedbackSection .container h3 {
+    font-weight: bold;
+    color: #a89f9f;
+}
+
+#feedbackSection .container h3 span {
+    color: var(--primary-color);
+}
+
+#footer {
+    background-color: var(--primary-color);
+}
+
+#footer .img {
+    width: 100%;
+    padding: 5rem 1rem;
+}
+
+#footer .img img {
+    width: 1005;
+    height: 100%;
+    object-fit: cover;
+}
