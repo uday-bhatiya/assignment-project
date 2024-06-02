@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,111 +8,137 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
 <body>
     <header></header>
     <main>
-       <section id="heroSection">
-        <div class="leftSection">
-            <h3>award winning</h3>
-            <h2>digital marketing <br> agency</h2>
-            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum</p>
-            <button>CONTACT US</button>
-        </div>
-        <div class="rightSection">
-            <div class="imgContainer">
-                <img src="/assests/hero.png" alt="hero png">
+        <section id="heroSection">
+            <div class="leftSection">
+                <h3>award winning</h3>
+                <h2>digital marketing <br> agency</h2>
+                <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit
+                    fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum</p>
+                <button id="contactUsBtn">CONTACT US</button>
             </div>
-        </div>
-       </section>
-       <section id="serviceSection">
-
-        <div class="serviceHead">
-         <div class="leftSection">
-             <h2>WHAT WE DO</h2>
-             <h3>Services provide <br> for you</h3>
-         </div>
-         <div class="rightSection">
-             <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum</p>
-         </div>   
-        </div>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./assests/1.png" alt="slide image">
-                <div class="overlay">
-                    <img src="/assests/icon.png" alt="icon">
-                    <h3>WEB DEVELOPMENT</h3>
-                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
-                    <div class="btn">
-                        <a href="https://www.fylehq.com/" >READ MORE</a>
-                        <img src="/assests/arrow.png" alt="arrow">
-                    </div>
+            <div id="popupForm" class="popup-form">
+                <div class="popupContent">
+                    <span class="close-btn" id="closeBtn">&times;</span>
+                    <form action="https://getform.io/f/qblodmma" method="POST">
+                        <h3>Talk to us</h3>
+                        <div class="detailInput">
+                            <input class="fullWidth" type="email" name="email" placeholder="work email*" required>
+                            <input type="text" name="firstName" placeholder="First Name*" required>
+                            <input type="text" name="lastName" placeholder="Last Name*" required>
+                        </div>
+                        <input type="hidden" name="_gotcha" style="display:none !important">
+                        <input id="checkBox" type="checkbox" name="agree">
+                        <label class="checkBoxLabel" for="checkBox"> I agree to Fyle's terms and
+                            conditions, and provide consent to send me communication.</label>
+                        <br>
+                        <div class="buttonContainer">
+                            <button class="submitBtn" type="submit">Contact Us</button>
+                        </div>
+                    </form>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <img src="./assests/2.png" alt="slide image">
-                <div class="overlay">
-                    <img src="/assests/icon.png" alt="icon">
-                    <h3>WEB DEVELOPMENT</h3>
-                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
-                    <div class="btn">
-                        <a href="https://www.fylehq.com/" >READ MORE</a>
-                        <img src="/assests/arrow.png" alt="arrow">
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <img src="./assests/3.png" alt="slide image">
-                <div class="overlay">
-                    <img src="/assests/icon.png" alt="icon">
-                    <h3>WEB DEVELOPMENT</h3>
-                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
-                    <div class="btn">
-                        <a href="https://www.fylehq.com/" >READ MORE</a>
-                        <img src="/assests/arrow.png" alt="arrow">
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <img src="./assests/1.png" alt="slide image">
-                <div class="overlay">
-                    <img src="/assests/icon.png" alt="icon">
-                    <h3>WEB DEVELOPMENT</h3>
-                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
-                    <div class="btn">
-                        <a href="https://www.fylehq.com/" >READ MORE</a>
-                        <img src="/assests/arrow.png" alt="arrow">
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <img src="./assests/2.png" alt="slide image">
-                <div class="overlay">
-                    <img src="/assests/icon.png" alt="icon">
-                    <h3>WEB DEVELOPMENT</h3>
-                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
-                    <div class="btn">
-                        <a href="https://www.fylehq.com/" >READ MORE</a>
-                        <img src="/assests/arrow.png" alt="arrow">
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <img src="./assests/3.png" alt="slide image">
-                <div class="overlay">
-                    <img src="/assests/icon.png" alt="icon">
-                    <h3>WEB DEVELOPMENT</h3>
-                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
-                    <div class="btn">
-                        <a href="https://www.fylehq.com/" >READ MORE</a>
-                        <img src="/assests/arrow.png" alt="arrow">
-                    </div>
-                </div>
-              </div>
+            </div>
             
+
+            <div class="rightSection">
+                <div class="imgContainer">
+                    <img src="/assests/hero.png" alt="hero png">
+                </div>
             </div>
-            <div class="swiper-pagination"></div>
-          </div>
+        </section>
+        <section id="serviceSection">
+
+            <div class="serviceHead">
+                <div class="leftSection">
+                    <h2>WHAT WE DO</h2>
+                    <h3>Services provide <br> for you</h3>
+                </div>
+                <div class="rightSection">
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit
+                        fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum</p>
+                </div>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assests/1.png" alt="slide image">
+                        <div class="overlay">
+                            <img src="/assests/icon.png" alt="icon">
+                            <h3>WEB DEVELOPMENT</h3>
+                            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                            <div class="btn">
+                                <a href="https://www.fylehq.com/">READ MORE</a>
+                                <img src="/assests/arrow.png" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assests/2.png" alt="slide image">
+                        <div class="overlay">
+                            <img src="/assests/icon.png" alt="icon">
+                            <h3>WEB DEVELOPMENT</h3>
+                            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                            <div class="btn">
+                                <a href="https://www.fylehq.com/">READ MORE</a>
+                                <img src="/assests/arrow.png" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assests/3.png" alt="slide image">
+                        <div class="overlay">
+                            <img src="/assests/icon.png" alt="icon">
+                            <h3>WEB DEVELOPMENT</h3>
+                            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                            <div class="btn">
+                                <a href="https://www.fylehq.com/">READ MORE</a>
+                                <img src="/assests/arrow.png" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assests/1.png" alt="slide image">
+                        <div class="overlay">
+                            <img src="/assests/icon.png" alt="icon">
+                            <h3>WEB DEVELOPMENT</h3>
+                            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                            <div class="btn">
+                                <a href="https://www.fylehq.com/">READ MORE</a>
+                                <img src="/assests/arrow.png" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assests/2.png" alt="slide image">
+                        <div class="overlay">
+                            <img src="/assests/icon.png" alt="icon">
+                            <h3>WEB DEVELOPMENT</h3>
+                            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                            <div class="btn">
+                                <a href="https://www.fylehq.com/">READ MORE</a>
+                                <img src="/assests/arrow.png" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assests/3.png" alt="slide image">
+                        <div class="overlay">
+                            <img src="/assests/icon.png" alt="icon">
+                            <h3>WEB DEVELOPMENT</h3>
+                            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                            <div class="btn">
+                                <a href="https://www.fylehq.com/">READ MORE</a>
+                                <img src="/assests/arrow.png" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </section>
         <section id="featuredSection">
             <div class="heading">
@@ -154,25 +181,25 @@
                 <h2>Our project</h2>
                 <h3>Why We Are Best</h3>
             </div>
-           <div class="container">
-            <div class="img">
-                <img src="/assests/image.png" alt="project image">
+            <div class="container">
+                <div class="img">
+                    <img src="/assests/image.png" alt="project image">
+                </div>
+                <div class="projectContainer">
+                    <div class="project">
+                        <h3>Genderless Kei – Japan’s Hot</h3>
+                        <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
+                    </div>
+                    <div class="project">
+                        <h3>Better Strategy & Quality</h3>
+                        <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
+                    </div>
+                    <div class="project">
+                        <h3>Genderless Kei – Japan’s Hot</h3>
+                        <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
+                    </div>
+                </div>
             </div>
-            <div class="projectContainer">
-                <div class="project">
-                    <h3>Genderless Kei – Japan’s Hot</h3>
-                    <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
-                </div>
-                <div class="project">
-                    <h3>Better Strategy & Quality</h3>
-                    <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
-                </div>
-                <div class="project">
-                    <h3>Genderless Kei – Japan’s Hot</h3>
-                    <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
-                </div>
-            </div>
-           </div>
         </section>
         <section id="companySection">
             <div class="heading">
@@ -208,7 +235,8 @@
                 <h3>people say's about us !</h3>
             </div>
             <div class="container">
-                <p>Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original.</p>
+                <p>Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+                    interested. Sections Bonorum et Malorum original.</p>
                 <h3><span>JANNAT TUMPA</span>- COO, AMERIMAR ENTERPRISES, INC.</h3>
             </div>
         </section>
@@ -224,4 +252,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>
